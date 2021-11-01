@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navhost"
+    app:startDestination="@id/services_Fragment">
+
+
+    <fragment
+        android:id="@+id/services_Fragment"
+        android:name="com.im.solobarbers.views.dashboard.fragments.home.home_fragments.Services_Fragment"
+        android:label="Services_Fragment">
+        <action
+            android:id="@+id/action_services_Fragment_to_confirmBooking_Fragment"
+            app:destination="@id/confirmBooking_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmBooking_Fragment"
+        android:name="com.im.solobarbers.views.dashboard.fragments.home.home_fragments.ConfirmBooking_Fragment"
+        android:label="fragment_confirm_booking_"
+        tools:layout="@layout/fragment_confirm_booking_">
+        <action
+            android:id="@+id/action_confirmBooking_Fragment_to_services_Fragment"
+            app:destination="@id/services_Fragment" />
+        <argument
+            android:name="Haircut"
+            android:defaultValue="@null"
+            app:argType="com.im.solobarbers.firestore.haircut.Haircut"
+            app:nullable="true" />
+    </fragment>
+</navigation>
+

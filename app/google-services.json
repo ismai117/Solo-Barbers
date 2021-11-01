@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537894626418",
+    "project_id": "solobarbers-b2f54",
+    "storage_bucket": "solobarbers-b2f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537894626418:android:f1f1a91045b0415e5f0eeb",
+        "android_client_info": {
+          "package_name": "com.im.solobarbers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537894626418-boapqmncceh7fsqon7iopbvf0l9vd22l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXaT2j4oMqd5dE09oBbG8Tf8GweoRaDn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537894626418-boapqmncceh7fsqon7iopbvf0l9vd22l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_navhost"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.im.solobarbers.views.dashboard.fragments.home.Home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" />
+    <fragment
+        android:id="@+id/favourites"
+        android:name="com.im.solobarbers.views.dashboard.fragments.favourites.Favourites_Fragment"
+        android:label="fragment_favourites_"
+        tools:layout="@layout/fragment_favourites_" />
+    <fragment
+        android:id="@+id/appointment"
+        android:name="com.im.solobarbers.views.dashboard.fragments.appointment.Appointment_Fragment"
+        android:label="fragment_appointment_"
+        tools:layout="@layout/fragment_appointment_" />
+
+</navigation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".views.dashboard.fragments.home.home_fragments.ConfirmBooking_Fragment">
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/confirm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Confirm Booking"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_title">
+
+
+        <TextView
+            android:id="@+id/type_title"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="TYPE"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:id="@+id/type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="220dp"
+            android:lineSpacingExtra="4sp"
+            android:text="Beard Trim"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/type_layout">
+
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="SELECT DATE"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/date_layout">
+
+    <TextView
+        android:id="@+id/price_title"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:id="@+id/price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£14,00"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmbooking_Btn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/btn_border"
+        android:padding="15dp"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
